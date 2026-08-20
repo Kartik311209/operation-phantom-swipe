@@ -1,0 +1,23 @@
+==================================================================
+ OPERATION PHANTOM SWIPE - VAULT DICTIONARY ATTACK
+ Target : evidence/protected/vault.zip
+ Wordlist: scripts/wordlist.txt
+ Run    : 2026-08-20T16:50:03Z   Examiner: [Your Name]
+==================================================================
+[*] 53 candidate passwords loaded
+[*] Testing against member: vault/buyer_invoice.txt
+
+    ... 10 tried (last: welcome)
+    ... 20 tried (last: skimmer2024)
+    ... 30 tried (last: kilo)
+    ... 40 tried (last: carder2024)
+
+==================================================================
+ [+] PASSWORD RECOVERED : 'cashout2024'
+ [+] Attempts           : 41/53
+ [+] Time               : 0.0028 s  (14,908 guesses/s)
+==================================================================
+ [+] Recovered files -> artefacts/recovered/
+       - vault/buyer_invoice.txt
+       - vault/pan_dump_full.csv
+       - vault/wallet_seed.txt

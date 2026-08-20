@@ -1,0 +1,4 @@
+INVOICE - dumps batch 2024-11-04
+20 dumps @ $12  = $240
+BTC 1PhaNtoMsWiPe000TestOnlyDummyAddr
+50% advance, 50% on delivery. Buyer: buyer.dxb@proton-dummy.test

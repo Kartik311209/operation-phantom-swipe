@@ -1,0 +1,12 @@
+{
+  "app": "com.phantom.carderpro",
+  "version": "1.4",
+  "c2_host": "phantom-swipe.onion",
+  "c2_fallback": "185.220.101.47",
+  "operator_id": "Kilo",
+  "btc_wallet": "1PhaNtoMsWiPe000TestOnlyDummyAddr",
+  "usdt_trc20": "TPhantoMsWipeTestOnlyDummyAddr0",
+  "pan_sink_file": "/sdcard/Android/data/com.phantom.carderpro/dumps.csv",
+  "buyer_contact": "buyer.dxb@proton-dummy.test",
+  "dump_price_usd": 12
+}

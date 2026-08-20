@@ -1,0 +1,22 @@
+{
+  "locations": [
+    {
+      "timestampMs": "1730531662000",
+      "latE7": 285632000,
+      "lngE7": 772249000,
+      "note": "HDFC Connaught Place ATM #112, New Delhi"
+    },
+    {
+      "timestampMs": "1730656961000",
+      "latE7": 252769870,
+      "lngE7": 552962490,
+      "note": "Axis Bank Dubai Branch #07"
+    },
+    {
+      "timestampMs": "1730660000000",
+      "latE7": 338651430,
+      "lngE7": 355121420,
+      "note": "cash pickup point"
+    }
+  ]
+}

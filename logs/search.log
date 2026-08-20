@@ -1,0 +1,53 @@
+======================================================================
+ OPERATION PHANTOM SWIPE - MEDIA SEARCH & ARTEFACT EXTRACTION
+ Run: 2026-08-20T16:50:03Z   Examiner: [Your Name]
+======================================================================
+
+[1] STRING SEARCH (regex sweep over 12 text media)
+----------------------------------------------------------------------
+  PAN  4111111111111111  [Luhn-VALID]  evidence/device01_skimmer/captured_tracks.log:4
+  PAN  5555555555554444  [Luhn-VALID]  evidence/device01_skimmer/captured_tracks.log:5
+  PAN  378282246310005   [Luhn-VALID]  evidence/device01_skimmer/captured_tracks.log:6
+  PAN  6011000990139424  [Luhn-VALID]  evidence/device01_skimmer/captured_tracks.log:7
+  PAN  3530111333300000  [Luhn-VALID]  evidence/device01_skimmer/captured_tracks.log:8
+  C2   phantom-swipe.onion      evidence/device02_phone/apps/carderpro_config.json:4
+  BTC  1PhaNtoMsWiPe000TestOnlyDummyAddr  evidence/device02_phone/apps/carderpro_config.json:7
+  BTC  1PhaNtoMsWiPe000TestOnlyDummyAddr  evidence/device02_phone/mail/buyer_deal.eml:10
+  GPS  25.276987,55.296249      evidence/device02_phone/mail/buyer_deal.eml:11
+  GPS  28.5632,77.2249          evidence/device02_phone/media/photo_metadata.csv:2
+  GPS  25.276987,55.296249      evidence/device02_phone/media/photo_metadata.csv:3
+  GPS  33.865143,35.512142      evidence/device02_phone/media/photo_metadata.csv:4
+  OTP  448190   evidence/device02_phone/sms_backup.txt:2
+  OTP  771020   evidence/device02_phone/sms_backup.txt:4
+  GPS  33.865143,35.512142      evidence/device02_phone/whatsapp_chat.txt:5
+  GPS  25.276987,55.296249      evidence/device02_phone/whatsapp_chat.txt:5
+  BTC  1PhaNtoMsWiPe000TestOnlyDummyAddr  evidence/device02_phone/whatsapp_chat.txt:7
+
+[2] BINARY STRING CARVING  (skimmer_firmware.bin)
+----------------------------------------------------------------------
+  STR  PHANTOM-SKIMMER v2.3.1-mod build 20240915
+  STR  C2_HOST=phantom-swipe[.]onion
+  STR  BT_COLLECTOR=44:80:EB:9F:1C:7A
+  STR  DUMP_KEY=cashout2024
+  STR  OPERATOR=Kilo
+  STR  WALLET_BTC=1PhaNtoMsWiPe000TestOnlyDummyAddr
+
+[3] METADATA EXTRACTION  (photo_metadata.csv + file times)
+----------------------------------------------------------------------
+  IMG  IMG_2041.jpg  2024:11:02 09:12:59  GPS=28.5632,77.2249  samsung SM-M325F
+  IMG  IMG_2042.jpg  2024:11:03 18:20:07  GPS=25.276987,55.296249  samsung SM-M325F
+  IMG  IMG_2043.jpg  2024:11:04 08:29:44  GPS=33.865143,35.512142  samsung SM-M325F
+
+[4] EMAIL EXTRACTION  (.eml headers + IOCs)
+----------------------------------------------------------------------
+  From             Kilo <kilo.ops@mail-dummy.test>
+  To               Buyer DXB <buyer.dxb@proton-dummy.test>
+  Subject          20 fresh dumps - CP + DXB batch
+  Date             Mon, 04 Nov 2024 08:45:03 +0530
+  Message-ID       <a1b2c3d4@mail-dummy.test>
+  X-Originating-IP [185.220.101.47]
+
+======================================================================
+ ARTEFACTS CATALOGUED: 19  ->  artefacts/extracted_artefacts.md
+ Evidence log         ->  artefacts/evidence_log.csv
+======================================================================

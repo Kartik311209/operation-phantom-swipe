@@ -1,0 +1,7 @@
+# pm list packages -f  (trimmed logical extract)
+com.whatsapp                         2.24.10.85
+com.android.chrome                   129.0
+com.phantom.carderpro                1.4        <-- non-Play sideload (carding tool)
+com.fake.hdfcbank                     3.0        <-- repackaged phishing banking app
+org.torproject.android               17.2       (Orbot)
+com.bluetooth.dumpsync               0.9        <-- pulls skimmer dumps over BT

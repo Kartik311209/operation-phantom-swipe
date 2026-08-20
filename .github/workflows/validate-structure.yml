@@ -1,0 +1,55 @@
+name: Validate Repository Structure
+
+# CI for the Operation Phantom Swipe forensics submission.
+# Job 1 checks that every required deliverable is present and well-formed.
+# Job 2 rebuilds the evidence from scratch and proves the pipeline is
+# reproducible (hashes verify, vault cracks, artefacts extracted).
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  structure:
+    name: Deliverable structure check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate required files & folders
+        run: python3 scripts/validate_structure.py
+
+  reproducibility:
+    name: Rebuild & verify pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Regenerate evidence and re-seal vault
+        run: |
+          python3 scripts/generate_evidence.py
+          bash   scripts/seal_vault.sh
+      - name: Hash acquired media (SHA-256)
+        run: python3 scripts/hash_files.py
+      - name: Verify integrity manifest
+        run: sha256sum -c hashes/SHA256SUMS.txt
+      - name: Run media search & artefact extraction
+        run: python3 scripts/search_media.py
+      - name: Crack the protected vault (dictionary attack)
+        run: python3 scripts/crack_zip.py
+      - name: Assert password was recovered
+        run: grep -q "PASSWORD RECOVERED" logs/cracking.log
+      - name: Upload run logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: forensic-logs
+          path: logs/

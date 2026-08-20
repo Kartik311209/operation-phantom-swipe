@@ -1,0 +1,4 @@
+PAIRED DEVICES (skimmer BT stack)
+---------------------------------
+44:80:EB:9F:1C:7A   GalaxyM32-OP     trusted   last=2024-11-04T08:31Z
+A0:1D:48:22:9E:00   PS2-000734       self

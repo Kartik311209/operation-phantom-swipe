@@ -1,0 +1,7 @@
+# WhatsApp export - group "PhantomSwipe" (com.whatsapp)
+[02/11/2024, 09:20:11] Kilo: cloned 6 cards today at CP. tracks in captured_tracks.log
+[02/11/2024, 09:21:40] Buyer-DXB: send dumps to my proton. price 12$ each for platinum
+[03/11/2024, 18:40:02] Kilo: moving ops to Dubai branch 07, cameras blind on left lane
+[03/11/2024, 18:41:19] Mule-2: withdrawing at 33.865143,35.512142 then 25.276987,55.296249
+[04/11/2024, 08:36:55] Kilo: everything zipped in vault.zip pass is the usual dump key
+[04/11/2024, 08:37:30] Buyer-DXB: crypto sent to 1PhaNtoMsWiPe000TestOnlyDummyAddr

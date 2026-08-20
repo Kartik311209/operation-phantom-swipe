@@ -1,0 +1,7 @@
+# Python dependencies for Operation Phantom Swipe
+# Core forensic scripts (generate/hash/search/crack) use ONLY the Python
+# standard library and need nothing here. These are required only to
+# regenerate the PDFs and screenshots.
+reportlab>=4.0
+Pillow>=10.0
+pypdf>=4.0

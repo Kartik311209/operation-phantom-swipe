@@ -1,0 +1,7 @@
+# Android SMS logical extract (com.android.providers.telephony)
+2024-11-02 09:15 | +91-98XXXX2210  | INBOX | HDFCBK: OTP 448190 for txn of INR 49,999 at AMZ. Do not share.
+2024-11-02 09:16 | Kilo            | SENT  | got 448190, pushing the amz order now
+2024-11-03 18:23 | +91-90XXXX8841  | INBOX | ICICI: 6011 card used AED 3,500 DXB. OTP 771020
+2024-11-03 18:24 | Buyer-DXB       | SENT  | tracks landed, sending 20 dumps tonight. usual split
+2024-11-04 08:35 | Kilo            | SENT  | skimmer dump pulled over BT, uploading to vault
+2024-11-04 21:10 | Mule-2          | INBOX | 3 cards declined at CP, switching to Dubai ATMs

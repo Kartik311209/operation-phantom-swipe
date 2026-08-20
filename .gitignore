@@ -1,0 +1,17 @@
+# Build / staging (never commit vault plaintext)
+_build_src/
+_preview/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# John the Ripper working files
+logs/vault.hash
+*.pot
+
+# OS cruft
+.DS_Store
+Thumbs.db

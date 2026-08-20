@@ -1,0 +1,2 @@
+# DUMMY seed phrase (NOT a real wallet)
+phantom swipe test only dummy never use ledger sample invalid seed words here

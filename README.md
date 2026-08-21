@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | [Your Name] |
-| **Roll No.** | [Roll No] |
-| **Course / Subject** | [Course / Subject] |
-| **Institution** | [University] |
-| **Submission date** | [Date] |
+| **Name** |Kartik Kumar|
+| **Roll No.** | 2301730205 |
+| **Course / Subject** |B.Tech CSE AIML (Section - 3) |
+| **Institution** |K.R Mangalam University |
+| **Submission date** |21-08-2026 |
 
 ---
 

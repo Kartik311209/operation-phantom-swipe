@@ -1,7 +1,7 @@
 ====================================================================
  OPERATION PHANTOM SWIPE - EVIDENCE HASHING LOG (SHA-256)
- Generated: 2026-08-20T16:50:02Z   Examiner: [Your Name]
- Tool: hash_files.py (Python 3.10.12, hashlib)
+ Generated: 2026-08-21T03:56:12Z   Examiner: [Kartik Kumar]
+ Tool: hash_files.py (Python 3.11.9, hashlib)
 ====================================================================
 [01] a9c44c909059d6307bc7fb055730695316c72135a18fb6207ef980bb0b4e31c5      180 B  evidence/device01_skimmer/bluetooth_pairing.txt
 [02] d664accafa37e3d4ba25c1e2d3d15abee58a642864df9ad2dcf14c72f332d10f     1152 B  evidence/device01_skimmer/captured_tracks.log
